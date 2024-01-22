@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+ <head> <title>Hyper Text Markup Language - HTML</title>
+    <link rel="icon" type="image/x-icon" href="page_icon.ico">
+ </head>
+
+ <body>  <h1>Hyper Text Markup Language (HTML)</h1> - Follows the latest standard: <em>HTML5</em>
+  <nav>	<hr>
+	 <a href="HTML.html">Main-Webpage</a> | 
+	 <a href="HTML Basics.html">1. HTML Basics: Elements and Attributes</a> |
+	 <a href="Formatting and Style (CSS).html">2. HTML Formatting and Style(CSS)</a> |
+	 <a href="Tables and Input.html">3. HTML Tables and Input</a> |
+	 <a href="Embedded Content and APIs.html">4. HTML Embedded Content and APIs</a> | &emsp; | -
+	 <a href="History.html">The History of HTML</a> - | <br /> &#9635; || 
+	 <a href="#">Web Accessibility - <i>{Coming Soon}</i></a> | 
+	 <a href="#">HTML Graphics - SVG and Canvas - <i>{Coming Soon}</i></a> || &#9635; || 
+	 <a href="#">CSS - <i>{Coming Soon}</i></a> | 
+	 <a href="#">Javascript and HTML DOM - <i>{Coming Soon}</i></a> || &#9635;
+  </nav>	<hr>
+
+ <main>
+    <p>HTML is the World Wide Web's core (standard) markup language for creating Web pages, it describes the structure of a Web page and consists of a series of elements.
+        HTML was primarily designed as a language for semantically describing scientific documents.
+        Its design has enabled it to be adapted over subsequent years, to describe a number of other types of documents and even applications.
+        These definitions allow HTML processors (such as <i>web browsers or search engines</i>), to present and use documents or applications in a wide variety of contexts.
+        For example, Search engines can use headings, to effectively index a page or provide links to subsections of the page from results.
+        <br/>HTML <strong>Elements</strong> tell the browser how to display content, and label content using <em>start and end tags</em>:
+        <code><b> &lt;Start-Tag> <em>Content is everything inside of the start and end tags.</em> &lt;/End-Tag> </b></code>
+        <br/>Some Elements are Empty Elements and do not have an End Tag: <code><b> &lt;Empty-Element> </b></code>
+        <br/>HTML documents might be rendered to a <i>screen, through a speech synthesizer or on a braille display</i>.
+        To influence exactly how such rendering takes place, authors can also use a styling language such as <strong>CSS</strong>.
+    </p>
+
+  <section> <h2>HTML Editors</h2>
+    <p>A text editor is all you need to learn HTML!
+      Web pages can be created and modified using professional HTML editors, however for learning;
+      it's recommend to use a simple text editor like <i>Notepad (PC) or TextEdit (Mac)</i>.
+    </p>
+
+     <label for="sample_html" id="sample_html"> A basic HTML document looks like this: </label>
+     <br/>  <textarea name="sample_html" rows="14" cols="100">
+&lt;!DOCTYPE html>
+&lt;html lang ="en">
+  &lt;head>
+    &lt;title>Sample page&lt;/title>
+  &lt;/head>
+ &lt;body>
+  &lt;h1>A Sample HTML Page!&lt;/h1>
+    &lt;p>This is a paragraph in our HTML document, this paragraph also contains a sample link! 
+        This is a &lt;a href="sample2.html">Sample Link&lt;/a> example!
+    &lt;/p>
+ &lt;/body>
+&lt;/html>
+    </textarea>
+     <p>You save the file on your computer, using either <em><b>.htm or .html</b></em> as the file extension (there is no difference).
+      And set the encoding to <em><b>UTF-8</b> (Unicode)</em>, witch is the preferred encoding for HTML; it is also the default character set, if one is not specified otherwise.
+      To view the HTML Page in your Browser, <i>double click</i> on the file, or right-click it and choose <i>"Open with"</i>.
+     </p>
+  </section>
+
+  <section> <h2>Web Browsers</h2>
+    <p>The purpose of a web browser (such as <i>Chrome, Edge, Firefox or Safari</i>) is to read HTML documents and display them correctly.
+      A browser does not display the HTML tags, but uses them to determine how to display the document;
+      then parse this markup, turning it into a <strong>DOM <em>(Document Object Model)</em> tree</strong>.
+      A <em>DOM tree</em> is an in-memory representation of a document, the <strong>HTML DOM</strong> is an <strong>API <em>(Programming Interface)</em></strong> for <em><b>JavaScript</b></em>.
+      DOM trees contain several kinds of <em><b>nodes</b></em>, in particular a <em>DocumentType node, Element nodes, Text nodes, Comment nodes, and in some cases Processing Instruction nodes</em>.
+      Each element in the DOM tree is represented by an <em><b>object</b></em>, and these objects have APIs so that they can be manipulated from <em>scripts</em> in the page.
+      <em><b>Scripts</b></em> (typically in <em>JavaScript</em>) are small programs that can be embedded using the <em>&lt;script></em> element or using <em>event handler content attributes</em>.
+     </p>
+    <h3>Inspect an HTML Element</h3>
+     <p>To view <em>HTML Source Code</em>, Right-click in an HTML page and select <i>"View Page Source"</i> in Chrome or <i>"View Source"</i> in Edge (or similar methods in other browsers).
+      Or to Inspect an <em>HTML Element</em>, Right-click on an element (or a blank area), and choose <i>"Inspect" or "Inspect Element"</i> to see what the elements are made up of.
+      Doing any of these this will open a window containing the HTML source code of the page, you can then also edit the HTML on-the-fly in the <i>Elements panel</i> that opens.
+     </p>
+    <h3>Whitespace</h3>
+     <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.
+      The browser will automatically remove any extra spaces and lines when the page is displayed.
+     </p>
+  </section>
+
+  <section> <h2>HTML Character Sets (Encoding)</h2>
+     <p>To display an HTML page correctly, a web browser must know which character set to use, the encoding <em><b>UTF-8</b> (Unicode)</em>; is the default character set. 
+      <strong>Unicode</strong> is a character set, and <em><b>UTF-8</b></em> is encoding; Unicode is a list of characters with unique decimal numbers (code points).
+      Encoding is how these numbers are translated into binary numbers, to then be stored in a computer, UTF-8 encoding will store "hello" with binary.
+      So the encoding translates numbers into binary, while the character set translates characters into numbers.
+      <br />The character encoding for the early web was <em>ASCII</em>, to standardize storing of text, the <em><b>American Standard Code for Information Interchange</b> (ASCII)</em> was created.
+      It defined a unique <em>binary number</em> for each storable character to support the <i>numbers from 0-9, the upper and lower case alphabet and special characters (like ! $ + - ( @ > , .)</i>.
+      Computer data is stored as binary codes (01000101) in the electronics.
+     </p>
+     <p>The character set most often used in HTML 4 was <em><b>ISO-8859-1</b></em>, witch is an extension to ASCII, with added international characters.
+      However, when a browser detects ISO-8859-1, it normally defaults to <em><b>Windows-1252</b></em>, because Windows-1252 has 32 more international characters.
+      <br />The <strong>Unicode Consortium</strong> then developed the <em><b>UTF-8</b> and <b>UTF-16</b></em> standards, because the ISO-8859 character-sets are limited and not a compatible multilingual environment.
+      The <em><b>Unicode Standard</b></em> covers almost all of the <i>characters, punctuations, and symbols</i> in the world;
+      it has become a success, implemented in <i>HTML, XML, Java, JavaScript, E-mail, ASP, PHP, etc</i>.
+      The Unicode standard is also supported in many operating systems and in all modern browsers.
+      The Unicode Consortium cooperates with the leading standards development organizations, like <i>ISO, W3C and ECMA</i>.
+     </p>
+     <p>A character-set different from UTF-8 can be specified in the &lt;meta> tag: <code>&lt;meta <em>charset="ISO-8859-1"</em>></code>
+      - HTML4 supports only the UTF-8 encoding, while HTML5 processors support both UTF-8, UTF-16 and the Windows-1252 or ISO-8859 character sets.
+     </p>
+
+     <h3>HTML Reserved Characters & Entities</h3>
+     <p>Some characters are reserved in HTML, <em>Reserved Characters</em> must be replaced with <em><b>Character Entities</b></em>; witch is done using the entities name or number: <code>&entity_name; | &#entity_number;</code>
+      <br/>If you use the less "<em><</em>" or greater than "<em>></em>" signs, the browser might mix them with tags;
+      character entities are used to display thease characters.
+      Another common use is the <em>non-breaking space</em>, it is to prevent browsers from truncating spaces in HTML pages.
+      If you write 10 spaces in text, the browser will remove 9 of them, so to add spaces to the text, you can use a character entity.
+      Browsers may not support all entity names, but the support for entity numbers is good.
+     <table>    <caption> <b>Some Useful HTML Character Entities</b> </caption>
+         <tr>   <th>Result</th> <th>Description</th> <th>Entity Name</th> <th>Entity Number</th>    </tr>
+         <tr>   <td></td> <td>Non-breaking Space</td> <td>&amp;nbsp;</td> <td>&amp;#160;</td>   </tr>
+         <tr>   <td><</td> <td>Less than</td> <td>&amp;lt;</td> <td>&amp;#60;</td>  </tr>
+         <tr>   <td>></td> <td>Greater than</td> <td>&amp;gt;</td> <td>&amp;#62;</td>   </tr>
+         <tr>   <td>&</td> <td>Ampersand</td> <td>&amp;amp;</td> <td>&amp;#38;</td> </tr>
+         <tr>   <td>"</td> <td>Double Quotation-mark</td> <td>&amp;quot;</td> <td>&amp;#34;</td>    </tr>
+         <tr>   <td>'</td> <td>Single Quotation-mark / Apostrophe)</td> <td>&amp;apos;</td> <td>&amp;#39;</td>  </tr>
+     </table>
+      <br/>See the <a target="_blank" href="https://www.w3schools.com/charsets/ref_html_entities_a.asp">Complete HTML5 Entity Reference</a>.
+     </p>
+
+    <h3>HTML Symbol Entities</h3>
+     <p>HTML symbols like <i>mathematical operators, currency, arrows, technical symbols and shapes</i>, are not present on a normal keyboard;
+      but can be added by using entities. To add such symbols to an HTML page, use the <em>entity name or entity number</em> for the symbol.
+     <table>    <caption> <b>Some Useful HTML Symbol Entities</b>   </caption>
+         <tr>   <th>Character</th> <th>Description</th> <th>Entity Name</th> <th>Entity Number</th> </tr>
+         <tr>   <td>Δ</td> <td>Delta</td> <td>&amp;Delta;</td> <td>&amp;#916;</td>  </tr>
+         <tr>   <td>€</td> <td>Euro</td> <td>&amp;euro;</td> <td>&amp;#163;</td>    </tr>
+         <tr>   <td>¥</td> <td>Yen</td> <td>&amp;yen;</td> <td>&amp;#8364;</td> </tr>
+         <tr>   <td>®</td> <td>Registered Trademark</td> <td>&amp;reg;</td> <td>&amp;#174;</td> </tr>
+         <tr>   <td>→</td> <td>Rightwards Arrow</td> <td>&amp;rarr;</td> <td>&amp;#8594;</td>   </tr>
+         <tr>   <td>♥</td> <td>Black Heart Suit</td> <td>&amp;hearts;</td> <td>&amp;#9829;</td> </tr>
+     </table>
+      <br/>See the <a target="_blank" href="https://www.w3schools.com/charsets/ref_utf_punctuation.asp">Complete HTML5 Symbols Reference</a>.
+     </p>
+
+    <h3>Emojis in HTML</h3>
+     <p>Emojis look like <i>images or icons</i>, but are not; they are characters from the <em>UTF-8</em> character set.
+      Many UTF-8 characters cannot be typed on keyboard, but displayed using numbers called entity numbers.
+      To let the browser understand you are displaying a character, you must start the entity number with <em><b>&</b> and <b>#</b></em>, then end with a <em>semicolon (<b>;</b>)</em>. 
+      Since Emojis are characters, they can be copied, displayed and sized just like any other character in HTML. 
+     <table>    <caption> <b>Some Emoji Symbols in UTF-8</b> </caption>
+         <tr>   <th>Emoji</th> <th>Value</th>   </tr>   
+         <tr>   <td>🗻</td> <td>&amp;#128507;</td>   </tr>
+         <tr>   <td>🗼</td> <td>&amp;#128508;</td>   </tr>
+         <tr>   <td>🗽</td> <td>&amp;#128509;</td>   </tr>
+         <tr>   <td>😀</td>  <td>&amp;#128512;</td>  </tr>
+         <tr>   <td>😁</td>  <td>&amp;#128513;</td>  </tr>
+         <tr>   <td>😂</td>  <td>&amp;#128514;</td>  </tr>
+     </table>
+      <br/>See the <a target="_blank" href="https://www.w3schools.com/charsets/ref_emoji.asp">Complete HTML5 Emoji Reference</a>.
+     </p>
+
+     <h3>Uniform Resource Locator (URL) Encoding</h3>
+      <p>A Uniform Resource Locator (URL) is used to address a document or other data on the web, it is another word for a web address; browsers request pages from web servers by using a URL.
+      A URL can be composed of words like <i>w3schools.com</i>, or as an <em><b>Internet Protocol</b> (IP)</em> address like <i>192.68.20.50</i>.
+      Most people, however, enter the name when surfing, because names are easier to remember than numbers.
+      <br />URL encoding (or <em>Percent Encoding</em>) converts characters into a format that can be transmitted over the Internet, URLs can only be sent over the Internet using the <em>ASCII</em> character-set.
+      Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format.
+      The URL encoding replaces unsafe ASCII characters with a "<b>%</b>" followed by two hexadecimal digits.
+      URLs cannot contain spaces, URL encoding normally replaces a space with a plus (<b>+</b>) sign or with <em><b>%20</b></em>.
+      </p>
+      <p>A web address such as <i>https://www.w3schools.com/html/default.asp</i> follows these syntax rules: <samp>scheme://prefix.domain:port/path/filename</samp>
+       <ul>
+          <li><strong>scheme</strong> - Defines the type of Internet service, the most common is <em>http or https</em>.
+           <table>  <caption>This table lists some common schemes:</caption>
+              <tr>  <th>Scheme</th> <th>Used for</th>   </tr>
+              <tr>  <td>http - HyperText Transfer Protocol</td> <td>Common web pages - Is not encrypted</td> </tr>
+              <tr>  <td>https - Secure HyperText Transfer Protocol</td> <td>Secure web pages - Is encrypted</td> </tr>
+              <tr>  <td>ftp - File Transfer Protocol</td> <td>Downloading or uploading files</td> </tr>
+              <tr>  <td>file</td> <td>A file on your computer</td> </tr>
+           </table>
+          </li>
+          <li><strong>prefix</strong> - Defines a domain prefix, the default for http is www</li>
+          <li><strong>domain</strong> - Defines the Internet domain name, such as <i>w3schools.com</i></li>
+          <li><strong>port</strong> - Defines the port number at the host, the default for http is 80</li>
+          <li><strong>path</strong> - Defines a path at the server, and if omitted, the root directory of the site</li>
+          <li><strong>filename</strong> - Defines the name of a document or resource</li>
+       </ul>
+      </p>
+    <h4>Hyper Text Transfer Protocol (HTTP)</h4>
+     <p>The World Wide Web (WWW) is about communication between web clients and servers, this is done by sending <em>HTTP Requests</em> and receiving <em>HTTP Responses</em>.
+      Clients are often browsers (<i>Chrome, Edge, Safari</i>), but they can be any type of program or device, Servers are most often computers in the cloud.
+      <br />The communication is done by request and response methods, shown below (read more on
+      <a target="_blank" href="https://www.w3schools.com/tags/ref_httpmethods.asp">HTTP Methods</a>):
+       <ol>
+           <li>A client (a browser) sends an HTTP request to the web</li>
+           <li>A web server receives the request</li>
+           <li>The server runs an application to process the request</li>
+           <li>The server returns an HTTP response (the output) to the browser</li>
+           <li>The client (the browser) receives the response</li>
+       </ol>
+      <strong>HTTP Status Messages</strong> - The server always returns a message for every request, these messages are called <em>HTTP Status Messages</em> (See a list of
+      <a target="_blank" href="https://www.w3schools.com/tags/ref_httpmessages.asp">HTTP Status Messages</a> that might be returned).
+      When a browser requests from a web server, an error may also occur and the server might return an error code like "<i>404 Not Found</i>";
+      it's common to name these <em>HTML error messages</em>.
+     </p>
+  </section>
+
+ </main>    <hr>
+  <footer>
+    <nav>
+	  <a href="HTML.html">Main-Webpage</a> | 
+	  <a href="HTML Basics.html">1. HTML Basics: Elements and Attributes</a> | 
+	  <a href="Formatting and Style (CSS).html">2. HTML Formatting and Style(CSS)</a> | 
+	  <a href="Tables and Input.html">3. HTML Tables and Input</a> | 
+	  <a href="Embedded Content and APIs.html">4. HTML Embedded Content and APIs</a> | &emsp; | - 
+	  <a href="History.html">The History of HTML</a> - | <br /> &#9635; || 
+	  <a href="#">Web Accessibility - <i>{Coming Soon}</i></a> | 
+	  <a href="#">HTML Graphics - SVG and Canvas - <i>{Coming Soon}</i></a> || &#9635; || 
+	  <a href="#">CSS - <i>{Coming Soon}</i></a> | 
+	  <a href="#">Javascript and HTML DOM - <i>{Coming Soon}</i></a> || &#9635;
+	</nav>	<hr>
+    <p> <strong>Note:</strong> In particular, familiarity with the basics of <strong>DOM</strong> is necessary for a complete understanding of some of the more technical parts.
+      An understanding of <em>Web IDL, HTTP, XML, Unicode, character encodings, JavaScript and CSS</em> will also be helpful in places but is not essential.
+    </p>
+    <p>This HTML Web Site was creadted by: <em>Stefano DeRose</em> <br/>
+      <br/> <em><strong>Site Refereneces:</strong> </em> <br/>
+       <cite>
+          <a target="_blank" href="https://www.w3schools.com/html/default.asp">W3Schools.com - HTML Tutorial</a>    <br/>
+          <a target="_blank" href="https://html.spec.whatwg.org/multipage/">HTML - Living Standard</a>
+       </cite>
+    </p>
+  </footer>
+
+ </body>
+</html>
